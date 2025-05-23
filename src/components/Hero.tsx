@@ -4,25 +4,25 @@ import { ChevronRight, ChevronLeft, Flame } from 'lucide-react';
 
 const heroSlides = [
   {
-    image: 'api/media/products/iphone16-2.png'
+    image: 'api/media/images/iphone16-2.png'
   },
   {
-    image: 'api/media/products/S25-Ultra-Banner1.jpg'
+    image: 'api/media/images/S25-Ultra-Banner1.jpg'
   },
   {
-    image: 'api/media/products/iphone16-pm.jpg'
+    image: 'api/media/images/iphone16-pm.jpg'
   },
   {
-    image: 'api/media/products/Galaxy-s25.jpg'
+    image: 'api/media/images/Galaxy-s25.jpg'
   },
   {
-    image: 'api/media/products/SAM-TAB8.jpeg'
+    image: 'api/media/images/SAM-TAB8.jpeg'
   },
   {
-    image: 'api/media/products/tws-banner.jpg'
+    image: 'api/media/images/tws-banner.jpg'
   },
   {
-    image: 'api/media/products/Banner-vivo.jpeg'
+    image: 'api/media/images/Banner-vivo.jpeg'
   },
   {
     image: 'https://images.pexels.com/photos/1294886/pexels-photo-1294886.jpeg?auto=compress&cs=tinysrgb&w=1920',

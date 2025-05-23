@@ -28,7 +28,7 @@ const DiscountPopup: React.FC = () => {
         <div className="p-6">
           <div className="mb-2 overflow-hidden rounded-lg">
             <img
-              src="api/media/products/PROMO-2.jpeg"
+              src="api/media/images/PROMO-2.jpeg"
               alt="Special Discount"
               className="w-full h-full"
             />

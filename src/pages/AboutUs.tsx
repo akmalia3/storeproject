@@ -4,7 +4,7 @@ import { Users, Award, Clock, MapPin, Phone, Mail } from 'lucide-react';
 const AboutPage: React.FC = () => {
   const galleryImages = [
     {
-      url: 'api/media/products/Front.jpeg',
+      url: 'api/media/images/Front.jpeg',
       title: 'Store Interior'
     },
     {
@@ -12,11 +12,11 @@ const AboutPage: React.FC = () => {
       title: 'Latest Smartphones'
     },
     {
-      url: 'api/media/products/customer.jpeg',
+      url: 'api/media/images/customer.jpeg',
       title: 'Customer Service'
     },
     {
-      url: 'api/media/products/display.jpeg',
+      url: 'api/media/images/display.jpeg',
       title: 'Product Display'
     }
   ];
@@ -26,7 +26,7 @@ const AboutPage: React.FC = () => {
       {/* Hero Section with Store Image */}
       <div className="relative h-[500px] overflow-hidden">
         <img 
-          src="api/media/products/RASYA.jpeg" 
+          src="api/media/images/RASYA.jpeg" 
           alt="Rasya Store Front" 
           className="absolute inset-0 w-full h-full object-cover"
         />

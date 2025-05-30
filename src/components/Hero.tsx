@@ -4,25 +4,25 @@ import { ChevronRight, ChevronLeft, Flame } from 'lucide-react';
 
 const heroSlides = [
   {
-    image: 'api/media/images/iphone16-2.png'
+    image: 'https://malia31.pythonanywhere.com/media/images/iphone16-2.png'
   },
   {
-    image: 'api/media/images/S25-Ultra-Banner1.jpg'
+    image: 'https://malia31.pythonanywhere.com/media/images/S25-Ultra-Banner1.jpg'
   },
   {
-    image: 'api/media/images/iphone16-pm.jpg'
+    image: 'https://malia31.pythonanywhere.com/media/images/BANNER-TV.jpg'
   },
   {
-    image: 'api/media/images/Galaxy-s25.jpg'
+    image: 'https://malia31.pythonanywhere.com/media/images/Galaxy-s25.jpg'
   },
   {
-    image: 'api/media/images/SAM-TAB8.jpeg'
+    image: 'https://malia31.pythonanywhere.com/media/images/SAM-TAB8.jpeg'
   },
   {
-    image: 'api/media/images/tws-banner.jpg'
+    image: 'https://malia31.pythonanywhere.com/media/images/BANNER-REALME.jpg'
   },
   {
-    image: 'api/media/images/Banner-vivo.jpeg'
+    image: 'https://malia31.pythonanywhere.com/media/images/BANNER-VIVO.jpeg'
   },
   {
     image: 'https://images.pexels.com/photos/1294886/pexels-photo-1294886.jpeg?auto=compress&cs=tinysrgb&w=1920',

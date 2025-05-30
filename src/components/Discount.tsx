@@ -1,10 +1,22 @@
 import React, { useState, useEffect } from 'react';
 import { X } from 'lucide-react';
 
+const promoImages = [
+  "https://malia31.pythonanywhere.com/media/images/PROMO-ITEL.jpeg",
+  "https://malia31.pythonanywhere.com/media/images/PROMO-OPPO.jpeg",
+  "https://malia31.pythonanywhere.com/media/images/PROMO-2.jpeg",
+  // Add more URLs if needed
+];
+
 const DiscountPopup: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [promoImage, setPromoImage] = useState<string | null>(null);
 
   useEffect(() => {
+    // Randomly pick an image on mount
+    const randomImage = promoImages[Math.floor(Math.random() * promoImages.length)];
+    setPromoImage(randomImage);
+
     const timer = setTimeout(() => {
       setIsOpen(true);
     }, 1000);
@@ -12,7 +24,7 @@ const DiscountPopup: React.FC = () => {
     return () => clearTimeout(timer);
   }, []);
 
-  if (!isOpen) return null;
+  if (!isOpen || !promoImage) return null;
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50">
@@ -28,7 +40,7 @@ const DiscountPopup: React.FC = () => {
         <div className="p-6">
           <div className="mb-2 overflow-hidden rounded-lg">
             <img
-              src="api/media/images/PROMO-2.jpeg"
+              src={promoImage}
               alt="Special Discount"
               className="w-full h-full"
             />

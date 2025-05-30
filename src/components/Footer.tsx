@@ -17,10 +17,10 @@ const Footer: React.FC = () => {
             Tempat terpercaya Anda untuk mendapatkan produk terbaik ❤️
             </p>
             <div className="flex space-x-4">
-              <a href="#https://web.facebook.com/RasyaAcc/" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://web.facebook.com/RasyaAcc/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#https://www.tiktok.com/@rasya_accessories?" className="text-gray-400 hover:text-white transition-colors">
+              <a href="https://www.tiktok.com/@rasya_accessories?" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                 <Music2 className="h-5 w-5" />
               </a>
               <a href="https://www.instagram.com/rasya_acc/" target="_blank" className="text-gray-400 hover:text-white transition-colors">

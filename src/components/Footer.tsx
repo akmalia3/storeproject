@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Smartphone, Mail, Phone, MapPin, Facebook, Twitter, Instagram } from 'lucide-react';
+import { Smartphone, Mail, Phone, MapPin, Facebook, Instagram, Music2 } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -17,11 +17,11 @@ const Footer: React.FC = () => {
             Tempat terpercaya Anda untuk mendapatkan produk terbaik ❤️
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
+              <a href="#https://web.facebook.com/RasyaAcc/" className="text-gray-400 hover:text-white transition-colors">
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="#https://www.tiktok.com/@rasya_accessories?" className="text-gray-400 hover:text-white transition-colors">
+                <Music2 className="h-5 w-5" />
               </a>
               <a href="https://www.instagram.com/rasya_acc/" target="_blank" className="text-gray-400 hover:text-white transition-colors">
                 <Instagram className="h-5 w-5" />

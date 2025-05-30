@@ -63,9 +63,9 @@ const AboutPage: React.FC = () => {
             <h2 className="text-3xl font-bold mb-6">Tentang Kami</h2>
             <p className="text-gray-600 mb-8">
               Didirikan pada tahun 2010, Rasya dimulai dengan misi sederhana: 
-              "membuat teknologi premium dapat diakses oleh semua orang". 
-              Apa yang dimulai sebagai toko ponsel kecil telah berkembang menjadi salah satu 
-              toko hp dam elektronik paling tepercaya di Temamgging.
+              "Membuat teknologi premium agar dapat diakses oleh semua orang". 
+              Apa yang dimulai sebagai toko hp sederhana telah berkembang menjadi salah satu 
+              toko hp dan elektronik paling tepercaya di Temanggung.
             </p>
             <p className="text-gray-600">
               Kami bangga menawarkan bukan hanya produk, tetapi juga solusi teknologi lengkap bagi pelanggan kami. 
@@ -148,7 +148,7 @@ const AboutPage: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <Phone className="h-6 w-6 text-primary-600 mr-2" />
-                <p className="text-gray-600">+62 123-456-7890</p>
+                <p className="text-gray-600">+62 856-4099-4441</p>
               </div>
               <div className="flex items-center">
                 <Mail className="h-6 w-6 text-primary-600 mr-2" />

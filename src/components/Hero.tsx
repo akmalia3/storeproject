@@ -22,7 +22,7 @@ const heroSlides = [
     image: 'https://malia31.pythonanywhere.com/media/images/BANNER-REALME.jpg'
   },
   {
-    image: 'https://malia31.pythonanywhere.com/media/images/BANNER-VIVO.jpeg'
+    image: 'https://malia31.pythonanywhere.com/media/images/BANNER-VIVO.jpg'
   },
   {
     image: 'https://images.pexels.com/photos/1294886/pexels-photo-1294886.jpeg?auto=compress&cs=tinysrgb&w=1920',

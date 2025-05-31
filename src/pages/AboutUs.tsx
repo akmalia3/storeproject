@@ -49,7 +49,7 @@ const AboutPage: React.FC = () => {
               <div className="text-gray-600">Brand</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-primary-600 mb-2">24/7</div>
+              <div className="text-3xl font-bold text-primary-600 mb-2">12jam</div>
               <div className="text-gray-600">Support</div>
             </div>
           </div>

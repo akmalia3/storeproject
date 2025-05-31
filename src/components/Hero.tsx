@@ -30,7 +30,7 @@ const heroSlides = [
     title: 'iPhone 15 Pro Max',
     subtitle: 'Experience the power of A17 Pro chip',
     description: 'Revolutionary camera system with 5x optical zoom',
-    cta: 'Shop Now',
+    cta: 'Beli Sekarang',
     link: '/category/smartphones',
     gradient: 'from-blue-900/80 to-transparent'
   },
@@ -38,9 +38,9 @@ const heroSlides = [
     image: 'https://images.pexels.com/photos/699122/pexels-photo-699122.jpeg?auto=compress&cs=tinysrgb&w=1920',
     tag: 'Best Seller',
     title: 'Samsung Galaxy S24 Ultra',
-    subtitle: 'AI at your fingertips',
+    subtitle: 'Dengan teknologi AI',
     description: 'Discover the next level of smartphone innovation',
-    cta: 'Learn More',
+    cta: 'Pelajari lebih lanjut',
     link: '/product/2',
     gradient: 'from-purple-900/80 to-transparent'
   },

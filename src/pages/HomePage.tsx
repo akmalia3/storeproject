@@ -91,7 +91,7 @@ const HomePage: React.FC = () => {
       {/* Product Sections with alternating backgrounds */}
       <section className="bg-white py-16">
         <ProductSection
-          title="Rekomendasi untuk kamu"
+          title="Rekomendasi untuk Kamu"
           products={recommendedProducts}
           loading={loading}
           error={error}
@@ -101,7 +101,7 @@ const HomePage: React.FC = () => {
 
       <section className="bg-gray-50 py-16">
         <ProductSection
-          title="Special Promo"
+          title="Spesial Promo"
           products={promoProducts}
           loading={loading}
           error={error}
@@ -121,7 +121,7 @@ const HomePage: React.FC = () => {
 
       <section className="bg-gray-50 py-16">
         <ProductSection
-          title="New Arrivals"
+          title="Produk Baru"
           products={newProducts}
           loading={loading}
           error={error}

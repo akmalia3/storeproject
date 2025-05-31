@@ -5,11 +5,11 @@ const AboutPage: React.FC = () => {
   const galleryImages = [
     {
       url: 'https://malia31.pythonanywhere.com/media/images/Front.jpeg',
-      title: 'Store Interior'
+      title: 'Interior Toko'
     },
     {
       url: 'https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg',
-      title: 'Latest Smartphones'
+      title: 'Smartphones Terbaru'
     },
     {
       url: 'https://malia31.pythonanywhere.com/media/images/customer.jpeg',
@@ -144,7 +144,7 @@ const AboutPage: React.FC = () => {
             <div className="flex flex-col items-center space-y-4 mb-8">
               <div className="flex items-center">
                 <MapPin className="h-6 w-6 text-primary-600 mr-2" />
-                <p className="text-gray-600">Jl. Subhi, Kauman, Paralan, Kawa Tengah</p>
+                <p className="text-gray-600">Jl. KH Subkhi, Besaran, Parakan Kauman, Kec. Parakan, Kabupaten Temanggung, Jawa Tengah</p>
               </div>
               <div className="flex items-center">
                 <Phone className="h-6 w-6 text-primary-600 mr-2" />
@@ -152,7 +152,7 @@ const AboutPage: React.FC = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="h-6 w-6 text-primary-600 mr-2" />
-                <p className="text-gray-600">contact@rasya.com</p>
+                <p className="text-gray-600">rasyaacc@gmail.com</p>
               </div>
             </div>
             <div className="aspect-w-16 aspect-h-9">

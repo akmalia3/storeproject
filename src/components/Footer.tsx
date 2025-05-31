@@ -75,7 +75,7 @@ const Footer: React.FC = () => {
 
           {/* Contact */}
           <div>
-            <h3 className="text-white font-medium mb-4">Contact Us</h3>
+            <h3 className="text-white font-medium mb-4">Kontak</h3>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin className="h-5 w-5 text-gray-400 mt-0.5" />
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-gray-400" />
-                <span>0856-4099-4441</span>
+                <a href='https://wa.me/6285640994441?'><span>0856-4099-4441</span></a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-gray-400" />

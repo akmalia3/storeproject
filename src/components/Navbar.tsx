@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
           {/* Logo and brand name */}
           <Link to="/" className="flex items-center space-x-2">
             <Smartphone className="h-8 w-8 text-primary-600" />
-            <span className="text-xl font-semibold text-gray-900">Rasya.com</span>
+            <span className="text-xl font-semibold text-gray-900">rasya.com</span>
           </Link>
 
           {/* Desktop navigation */}

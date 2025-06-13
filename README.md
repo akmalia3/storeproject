@@ -1,4 +1,4 @@
-# PhoneHub E-commerce Website
+# Rasya E-commerce Website
 
 This project is an e-commerce website for selling phones and tablets, built with React (frontend) and Django (backend).
 

@@ -11,7 +11,7 @@ class Product(models.Model):
     name = models.CharField(max_length=255)
     description = models.TextField()
     price = models.DecimalField(max_digits=12, decimal_places=2)
-    image = models.ImageField(upload_to='products/', blank=True, null=True)
+    image = models.ImageField(upload_to='images/', blank=True, null=True)
     image_url = models.URLField(blank=True)
     category = models.CharField(max_length=50, choices=CATEGORY_CHOICES)
     

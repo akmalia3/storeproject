@@ -5,6 +5,7 @@ export interface Product {
   originalPrice?: number; // Added for discount calculation
   description: string;
   image_url: string;
+  image: string;
   category: string;
   isNew: boolean;
   isBestSeller: boolean;

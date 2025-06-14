@@ -46,6 +46,7 @@ def load_products():
             description=product_data['description'],
             price=product_data['price'],
             image_url=product_data['image_url'],
+            image=product_data['image'],
             category=product_data['category'],
             is_new=product_data.get('is_new', False),
             is_best_seller=product_data.get('is_best_seller', False),

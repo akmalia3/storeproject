@@ -2,10 +2,15 @@ from rest_framework import serializers
 from .models import Product
 
 class ProductSerializer(serializers.ModelSerializer):
+    image = serializers.SerializerMethodField()
+
     class Meta:
         model = Product
-        fields = [
-            'id', 'name', 'description', 'price',
-            'image', 'image_url', 'category', 'is_new', 'is_best_seller',
-            'is_promo', 'is_recommended', 'in_stock', 'created_at'
-        ]
+        fields = '__all__'
+    
+    def get_image(self, obj):
+        request = self.context.get('request')
+        if obj.image and hasattr(obj.image, 'url'):
+            return request.build_absolute_uri(obj.image.url)
+        return None
+            

@@ -182,7 +182,7 @@ const AdminPage: React.FC = () => {
                     <div className="h-10 w-10 flex-shrink-0">
                       <img 
                         className="h-10 w-10 rounded-full object-cover" 
-                        src={product.image_url} 
+                        src={product.image_url || product.image} 
                         alt={product.name} 
                       />
                     </div>

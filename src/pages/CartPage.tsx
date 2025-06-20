@@ -44,7 +44,7 @@ const WishlistPage: React.FC = () => {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-4">
                     <img 
-                      src={item.image_url} 
+                      src={item.image_url || item.image} 
                       alt={item.name} 
                       className="w-24 h-24 object-cover rounded"
                     />

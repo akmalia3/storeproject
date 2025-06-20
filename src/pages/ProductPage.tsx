@@ -100,7 +100,7 @@ const ProductPage: React.FC = () => {
           {/* Product Image */}
           <div className="bg-gray-100 rounded-lg overflow-hidden">
             <img 
-              src={product.image} 
+              src={product.image || product.image_url}  
               alt={product.name} 
               className="w-full h-auto object-contain mx-auto"
               style={{ maxHeight: '500px' }}

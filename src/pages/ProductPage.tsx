@@ -87,7 +87,7 @@ const ProductPage: React.FC = () => {
             </li>
             <li className="flex items-center space-x-2">
               <ChevronRight className="h-4 w-4 text-gray-400" />
-              <a href="/category/smartphones" className="text-gray-500 hover:text-primary-600">Smartphones</a>
+              <span className="text-gray-900 font-medium">{product.category}</span>
             </li>
             <li className="flex items-center space-x-2">
               <ChevronRight className="h-4 w-4 text-gray-400" />

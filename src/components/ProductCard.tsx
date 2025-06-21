@@ -38,11 +38,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <Link to={`/product/${product.id}`} className="block">
         <div className="relative overflow-hidden pb-[100%]">
           <img 
-              src= {
-                product.image
-                ? `https://malia31.pythonanywhere.com${product.image}`
-                : product.image_url || '/static/images/placeholder.png'
-              }
+            src= {
+              product.image
+              ? `https://malia31.pythonanywhere.com${product.image}`
+              : product.image_url || '/static/images/placeholder.png'
+            }
             alt={product.name} 
             className="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-300"
           />

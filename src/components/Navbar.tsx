@@ -22,6 +22,7 @@ const Navbar: React.FC = () => {
               alt="rasya.acc"
               className="h-8 w-auto" 
             />
+            <span className="text-xl font-semibold text-gray-900">rasya.acc</span>
           </Link>
 
           {/* Desktop navigation */}

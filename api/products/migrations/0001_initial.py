@@ -18,7 +18,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=255)),
                 ('description', models.TextField()),
                 ('price', models.DecimalField(decimal_places=2, max_digits=12)),
-                ('image', models.ImageField(blank=True, null=True, upload_to='products/')),
+                ('image', models.ImageField(blank=True, null=True, upload_to='images/')),
                 ('image_url', models.URLField(blank=True)),
                 ('category', models.CharField(choices=[('smartphones', 'Smartphones'), ('accessories', 'Aksesoris'), ('electronics', 'Elektronik'), ('storage', 'Storage')], max_length=50)),
                 ('in_stock', models.BooleanField(default=True)),

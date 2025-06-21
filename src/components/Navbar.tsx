@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
             <img 
               src="https://malia31.pythonanywhere.com/media/images/favicon.ico"  // adjust the path to your actual logo location
               alt="rasya.acc"
-              className="h-8 w-auto" 
+              className="h-8 w-auto mr-2"  //
             />
             <span className="text-xl font-semibold text-gray-900">  rasya.acc</span>
           </Link>

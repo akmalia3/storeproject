@@ -17,8 +17,8 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo and brand name */}
           <Link to="/" className="flex items-center space-x-2">
-            <Smartphone className="h-8 w-8 text-primary-600" />
-            <span className="text-xl font-semibold text-gray-900">rasya.com</span>
+            <link rel="icon" type="image/x-icon" href="https://malia31.pythonanywhere.com/media/images/favicon.ico"/>
+            <span className="text-xl font-semibold text-gray-900">rasya.acc</span>
           </Link>
 
           {/* Desktop navigation */}

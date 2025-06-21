@@ -39,6 +39,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
         <div className="relative overflow-hidden pb-[100%]">
           <img 
             src={product.image || product.image_url} 
+            src={item.image || item.image_url} 
             alt={product.name} 
             className="absolute inset-0 w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-300"
           />

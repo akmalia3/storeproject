@@ -10,7 +10,6 @@ const Navbar: React.FC = () => {
 
   const wishlistItemCount = wishlistState.items.length;
 
-
   return (
     <header className="bg-white shadow-sm sticky top-0 z-50">
       <div className="container-custom">

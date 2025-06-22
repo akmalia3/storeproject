@@ -7,6 +7,9 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { state: wishlistState } = useWishlist();
+  const toggleDarkMode = () => {
+    document.documentElement.classList.toggle('dark');
+  };
 
   const wishlistItemCount = wishlistState.items.length;
 
@@ -62,13 +65,12 @@ const Navbar: React.FC = () => {
                 </span>
               )}
             </Link>
-            <Link 
-              to="/profile" 
-              className="p-2 text-gray-500 hover:text-primary-600 transition-colors"
-              aria-label="Profile"
+            <button
+              onClick={toggleDarkMode}
+              className="ml-4 px-3 py-1 rounded border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
             >
-              <User className="h-5 w-5" />
-            </Link>
+              Dark Mode
+            </button>
           </div>
 
           {/* Mobile menu button */}

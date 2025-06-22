@@ -45,10 +45,8 @@ const Navbar: React.FC = () => {
             <Link to="/about" className="text-gray-700 hover:text-primary-600 transition-colors">
               Tentang Kami
             </Link>
-            
-            {/* Dark mode toggle button */}
             <button
-              id="dark-mode-toggle"
+              onClick={toggleDarkMode}
               className="ml-4 px-3 py-1 rounded border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
             >
               Dark Mode

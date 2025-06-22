@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Menu, X, Search, User } from 'lucide-react';
+import { Heart, Menu, X, Search, User, Moon } from 'lucide-react';
 import { useWishlist } from '../context/CartContext';
 
 const Navbar: React.FC = () => {
@@ -60,9 +60,10 @@ const Navbar: React.FC = () => {
             </Link>
             <button
               onClick={toggleDarkMode}
-              className="ml-4 px-3 py-1 rounded border border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition"
+              className="p-2 text-gray-500 hover:text-primary-600 transition-colors"
+              aria-label="Toggle dark mode"
             >
-              Dark Mode
+              <Moon className="h-5 w-5" />
             </button>
           </div>
 

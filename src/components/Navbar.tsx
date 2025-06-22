@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Menu, X, Search, Smartphone, User } from 'lucide-react';
+import { Heart, Menu, X, Search, User } from 'lucide-react';
 import { useWishlist } from '../context/CartContext';
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const { state: wishlistState } = useWishlist();
+
   const toggleDarkMode = () => {
     document.documentElement.classList.toggle('dark');
   };
@@ -19,36 +20,25 @@ const Navbar: React.FC = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo and brand name */}
           <Link to="/" className="flex items-center">
-            <img 
-              src="https://malia31.pythonanywhere.com/media/images/favicon.ico"  // adjust the path to your actual logo location
+            <img
+              src="https://malia31.pythonanywhere.com/media/images/favicon.ico"
               alt="rasya.acc"
-              className="h-8 w-auto mr-2"  //
+              className="h-8 w-auto mr-2"
             />
-            <span className="text-xl font-semibold text-gray-900">  rasya.acc</span>
+            <span className="text-xl font-semibold text-gray-900">rasya.acc</span>
           </Link>
 
           {/* Desktop navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link to="/" className="text-gray-700 hover:text-primary-600 transition-colors">
-              Home
-            </Link>
-            <Link to="/category/smartphones" className="text-gray-700 hover:text-primary-600 transition-colors">
-              Smartphones
-            </Link>
-            <Link to="/category/accessories" className="text-gray-700 hover:text-primary-600 transition-colors">
-              Aksesoris
-            </Link>
-            <Link to="/category/electronics" className="text-gray-700 hover:text-primary-600 transition-colors">
-              Elektronik
-            </Link>
-            <Link to="/category/storage" className="text-gray-700 hover:text-primary-600 transition-colors">
-              Storage
-            </Link>
-            <Link to="/about" className="text-gray-700 hover:text-primary-600 transition-colors">
-              Tentang Kami
-            </Link>
+            <Link to="/" className="text-gray-700 hover:text-primary-600 transition-colors">Home</Link>
+            <Link to="/category/smartphones" className="text-gray-700 hover:text-primary-600 transition-colors">Smartphones</Link>
+            <Link to="/category/accessories" className="text-gray-700 hover:text-primary-600 transition-colors">Aksesoris</Link>
+            <Link to="/category/electronics" className="text-gray-700 hover:text-primary-600 transition-colors">Elektronik</Link>
+            <Link to="/category/storage" className="text-gray-700 hover:text-primary-600 transition-colors">Storage</Link>
+            <Link to="/about" className="text-gray-700 hover:text-primary-600 transition-colors">Tentang Kami</Link>
+          </nav>
 
-          {/* Desktop search, cart, and profile */}
+          {/* Desktop search, wishlist, dark mode */}
           <div className="hidden md:flex items-center space-x-4">
             <button
               onClick={() => setIsSearchOpen(!isSearchOpen)}
@@ -57,7 +47,10 @@ const Navbar: React.FC = () => {
             >
               <Search className="h-5 w-5" />
             </button>
-            <Link to="/wishlist" className="p-2 text-gray-500 hover:text-primary-600 transition-colors relative">
+            <Link
+              to="/wishlist"
+              className="p-2 text-gray-500 hover:text-primary-600 transition-colors relative"
+            >
               <Heart className="h-5 w-5" />
               {wishlistItemCount > 0 && (
                 <span className="absolute -top-1 -right-1 bg-accent-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
@@ -75,7 +68,10 @@ const Navbar: React.FC = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center space-x-2">
-            <Link to="/cart" className="p-2 text-gray-500 hover:text-primary-600 transition-colors relative mr-2">
+            <Link
+              to="/cart"
+              className="p-2 text-gray-500 hover:text-primary-600 transition-colors relative mr-2"
+            >
               <Heart className="h-5 w-5" />
               {wishlistItemCount > 0 && (
                 <span className="absolute -top-1 -right-1 bg-accent-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
@@ -83,8 +79,8 @@ const Navbar: React.FC = () => {
                 </span>
               )}
             </Link>
-            <Link 
-              to="/profile" 
+            <Link
+              to="/profile"
               className="p-2 text-gray-500 hover:text-primary-600 transition-colors"
               aria-label="Profile"
             >
@@ -163,6 +159,7 @@ const Navbar: React.FC = () => {
             >
               Tentang Kami
             </Link>
+
             <div className="pt-2 border-t border-gray-100">
               <div className="relative">
                 <input
